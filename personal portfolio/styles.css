@@ -1,0 +1,192 @@
+:root {
+    --main-darkblue: #264653;
+    --main-lightblue: #2a9d8f;
+    --main-yellow: #e9c46a;
+    --main-orange: #f4a261;
+    --main-darkorange: #e76f51;
+    --main-white: #fff;
+  }
+  .fa {  
+    padding: 20px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 50px;  
+  } 
+  .fa-linkedin {
+    color: white;
+  }
+  .fa-facebook {
+    color: white;
+  }
+  .fa-github {
+    color: white;
+  }
+  .fa-codepen{
+    color: white;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Mukta', sans-serif;
+    background-color: var(--main-orange);
+  }
+  #navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: var(--main-yellow); 
+  }
+  #navbar > ul {
+    display: flex;
+    list-style: none;
+  }
+  #navbar li:hover {
+    background-color: var(--main-lightblue);
+    color: italic;
+  }
+  #navbar a {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: var(--main-darkblue);
+  }
+  #navbar a:hover {
+    color: var(--main-white);
+  }
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #welcome-section h1 {
+    font-size: 4em;
+    font-weight: 400;
+    color: #023047;
+  }
+  #welcome-section p {
+    font-size: 2em;
+    font-style: italic;
+    color: #219ebc;
+  }
+  #projects {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-lightblue);
+    text-align: center;
+    width: 100%;
+  }
+  .project-tile {
+    background-color: var(--main-darkblue);
+    margin-bottom: 1.4em;
+    width: 800px;
+    padding: 0.7em 0 0.7em 0;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .project-tile:hover {
+    background-color: var(--main-darkorange);
+    width: 820px;
+    padding: 0.9em 0 0.9em 0;
+    transition: 0.5s;
+  }
+  #projects > p {
+    font-style: italic;
+    color: var(--main-white);
+    font-size: 2em;
+    margin: 2em 0;
+  }
+  #projects .project-link {
+    font-size: 2.3em;
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  #showmore {
+    background-color: var(--main-white);
+    font-size: 1.6em;
+    color: var(--main-darkblue);
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-bottom: 2em;
+  }
+  #profile-link {
+    text-decoration: none;
+  }
+  #showmore:hover {
+    padding: 15px 25px;
+    background-color: var(--main-yellow);
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-darkblue);
+    padding-bottom: 2em;
+  }
+  #contact-header {
+    margin-top: 2.5em;
+    font-size: 2em;
+    color: var(--main-white);
+    font-weight: 200;
+    text-shadow: 2px 2px 1px #1f1f1f;
+  }
+  
+  #contact-links {
+    margin-top: 2em;
+    text-shadow: 2px 2px 1px #1f1f1f;
+  }
+  #contact-links a {
+    text-decoration: none;
+  }
+  #contact-links a:hover {
+    background-color: var(--main-orange);
+    transform: translateY(8px);
+    transition: 0.5s;
+  }
+  @media (max-width: 850px) {
+    .project-tile {
+      width: 400px;
+    }
+    .project-tile:hover {
+      background-color: var(--main-darkorange);
+      width: 400px;
+      padding: 0.9em 0 0.9em 0;
+      transition: 0.5s;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #navbar ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #navbar li {
+      border-bottom: 2px solid var(--main-lightblue);
+    }
+    #navbar {
+      justify-content: center;
+    }
+    #navbar a {
+      padding: 1rem;
+    }
+    #welcome-section h1 {
+      font-size: 3em;
+    }
+    #welcome-section {
+      justify-content: flex-end;
+    }
+  }
